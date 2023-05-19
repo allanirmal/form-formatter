@@ -24,7 +24,7 @@ public class Menu extends MouseAdapter{
 		
 		if (main.getScreen() == SCREEN.Home)
 		{
-			if (mouseOver(mouseX, mouseY, 225, 300, 200, 75))
+			if (mouseOver(mouseX, mouseY, 300, 300, 200, 75))
 			{
 				main.setScreen(SCREEN.Input);
 			}
@@ -32,7 +32,7 @@ public class Menu extends MouseAdapter{
 		
 		else if (main.getScreen() == SCREEN.Input)
 		{
-			if (mouseOver(mouseX, mouseY, 225, 350, 200, 75))
+			if (mouseOver(mouseX, mouseY, 300, 450, 200, 75))
 			{
 				main.setScreen(SCREEN.Download);
 			}
@@ -86,48 +86,48 @@ public class Menu extends MouseAdapter{
 		
 		if (main.getScreen() == SCREEN.Home)
 		{
-			g.drawString("Home Screen", 225, 100);
+			g.drawString("Home Screen", 300, 100);
 			
 			//start button box
-			g.fillRect(225, 300, 200, 75);
+			g.fillRect(300, 300, 200, 75);
 			g.setColor(Color.gray);
-			g.fillRect(229, 304, 192, 67);
+			g.fillRect(304, 304, 192, 67);
 			
 			//start button text
 			g.setColor(Color.black);
-			g.drawString("START", 275, 350);
+			g.drawString("START", 350, 350);
 		}
 		else if (main.getScreen() == SCREEN.Input)
 		{
-			g.drawString("Input Screen", 225, 50);
+			g.drawString("Input Screen", 300, 50);
 			g.setFont(medium);
-			g.drawString("*Place page content here*", 200, 100);
+			g.drawString("*Place page content here*", 275, 100);
 			
 			//finish button box
-			g.fillRect(225, 350, 200, 75);
+			g.fillRect(300, 450, 200, 75);
 			g.setColor(Color.gray);
-			g.fillRect(229, 354, 192, 67);
+			g.fillRect(304, 454, 192, 67);
 			
 			//finish button text
 			g.setColor(Color.black);
 			g.setFont(large);
-			g.drawString("Finish", 275, 400);
+			g.drawString("Finish", 350, 500);
 		}
 		else if (main.getScreen() == SCREEN.Download)
 		{
-			g.drawString("Download Screen", 200, 50);
+			g.drawString("Download Screen", 260, 50);
 			g.setFont(medium);
-			g.drawString("*Place download stuff here (idk lol)*", 150, 100);
+			g.drawString("*Place download stuff here (idk lol)*", 210, 100);
 			
 			//download button box
-			g.fillRect(225, 350, 200, 75);
+			g.fillRect(300, 450, 200, 75);
 			g.setColor(Color.gray);
-			g.fillRect(229, 354, 192, 67);
+			g.fillRect(304, 454, 192, 67);
 			
 			//download button text
 			g.setColor(Color.black);
 			g.setFont(large);
-			g.drawString("Download", 250, 400);
+			g.drawString("Download", 325, 500);
 		}
 		
 		if (main.getScreen() != SCREEN.Home)

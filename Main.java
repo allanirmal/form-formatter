@@ -10,7 +10,7 @@ public class Main extends Canvas implements Runnable
 	
 	private static final long serialVersionUID = 7062228033778433412L;
 	
-	private static final int WIDTH = 640, HEIGHT = WIDTH / 12 * 9; //HEIGHT = 477
+	private static final int WIDTH = 800, HEIGHT = WIDTH / 12 * 9; //HEIGHT = 477
 	private Thread thread;
 	private boolean running = false;
 	
