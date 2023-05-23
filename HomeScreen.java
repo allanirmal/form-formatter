@@ -13,7 +13,6 @@ public class HomeScreen extends JFrame implements ActionListener
 	
 	private JLabel labelQuestion;
 	private JLabel labelAnswer;
-	private JTextField field;
 	private JButton startButton;
 
 	public HomeScreen()
@@ -22,6 +21,7 @@ public class HomeScreen extends JFrame implements ActionListener
 		initHomeScreen();
 		
 		setSize(200, 150);
+		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 	}
@@ -44,18 +44,14 @@ public class HomeScreen extends JFrame implements ActionListener
 	
 	public void actionPerformed(ActionEvent event) 
 	{
-		System.out.println("clicked");
+		//System.out.println("clicked");
 		new InputScreen().setVisible(true);
 		
 	}
-	
 	
 	public static void main(String[] args)
 	{
 		new HomeScreen().setVisible(true);
 	}
-
-	
-
 	
 }
